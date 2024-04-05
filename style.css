@@ -1,0 +1,146 @@
+/* Basic Styles */
+
+body {
+    font-family: Geologica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2ff;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0;
+  }
+  
+  p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+  
+  a {
+    color: #3b5998;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #303F60;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 50px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 30px; /* Spacing between logo and title */
+  }
+  
+  .icon {
+    width: 20px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 10px; /* Spacing between icon and text */
+    color:white
+  }
+
+  .header-text {
+    text-align: center;
+  }
+  
+  .msdn-title {
+    font-size: 4.5em;
+    margin-bottom: 10px;
+  }
+  
+/* Section Title Styles */
+
+.section-title {
+    font-family: Kalnia, sans-serif;  /* Use Kalnia font for subheadings */
+    font-size: 2.8em;  /* Increase font size for subheadings */
+    margin-bottom: 1em;
+    padding: 10px 20px;  /* Adjust padding for content within bubble */
+    border-radius: 20px;  /* Create the rounded bubble shape */
+    position: relative;  /* Required for positioning the pseudo-element */
+    color: white;  /* Set text color to white */
+    font-weight: 400;  /* Set font weight to normal (400) */
+  }
+  
+  .section-title::before {
+    content: "";  /* Empty content for the pseudo-element */
+    position: absolute;  /* Position the element relative to the section-title */
+    top: 0;  /* Adjust vertical offset to top (no offset) */
+    left: 0;  /* Adjust horizontal offset to left (no offset) */
+    width: 100%;  /* Set width to 100% of the section-title */
+    height: 100%;  /* Set height to 100% of the section-title */
+    background-color: #3b5998; /* lighter blue color for the bubble */
+    border-radius: 20px;  /* Match the rounded corners of the section-title */
+    z-index: -1;  /* Place the bubble behind the section title text */
+  }
+  
+  .islamic-pattern {
+    background-image: url("images/banner.png");  /* Replace with your PNG path */
+    background-size: cover;  /* Resize image to cover the container */
+    background-position: center;  /* Center the image within the container */
+    width: 1000px;  /* Half the original width (2000px) */
+    height: 250px;  /* Half the original height (500px) */
+  }
+  
+  /* Resources & Get Involved Styles */
+  
+  .resources {
+    margin-bottom: 2em;  /* Add some space below the resources section */
+  }
+  
+  .resource-box {
+    font-size: 1em;  /* Adjust font size for resources (optional) */
+    margin-bottom: 1em;  /* Add space between resources */
+    padding: 15px;  /* Adjust padding for content within box */
+    background-color: #d0e3f5;  /* Very light blue background */
+    border-radius: 20px;  /* Rounded corners like section titles */
+    color: black;  /* Black text for readability */
+  }
+  
+  .resource h3 {
+    font-weight: bold;  /* Make resource names bold (already set in HTML) */
+    display: flex;  /* Make the heading a flex container */
+    align-items: center;  /* Align content vertically within the flexbox */
+    justify-content: space-between;  /* Horizontally center content */
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #3b5998;
+  }
+  
+  /* Contact Styles */
+  
+  .contact-list {
+    margin: 1em 0;
+  }
+  
+  .contact-list li {
+    margin-bottom: 5px;
+  }
+  
