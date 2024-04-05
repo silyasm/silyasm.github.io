@@ -169,5 +169,9 @@ body {
       padding: 5px 10px;  /* Adjust padding for smaller screens */
     }
     /* Add more styles for mobile screens if needed */
+    .islamic-pattern {
+    height: 75px;  /* Adjust height proportionally */
+    width: 300px;
+    }
   }
   
