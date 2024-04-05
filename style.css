@@ -102,8 +102,9 @@ body {
     background-image: url("images/banner.png");  /* Replace with your PNG path */
     background-size: cover;  /* Resize image to cover the container */
     background-position: center;  /* Center the image within the container */
-    max-width: 100%;  /* Image won't exceed container width */
-    height: auto;  /* Adjust height proportionally */
+    height: 150px;  /* Adjust height proportionally */
+    width: 600px;
+    margin: 0 auto; /* Center the element horizontally */
   }
   
   /* Resources & Get Involved Styles */
@@ -143,7 +144,7 @@ body {
   .contact-list li {
     margin-bottom: 5px;
   }
-
+  
 /* Styles for screens wider than 768px (tablets and desktops) */
 @media (min-width: 768px) {
     .container {
