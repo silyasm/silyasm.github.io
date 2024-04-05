@@ -103,7 +103,8 @@ body {
     background-size: cover;  /* Resize image to cover the container */
     background-position: center;  /* Center the image within the container */
     width: 1000px;  /* Half the original width (2000px) */
-    height: 250px;  /* Half the original height (500px) */
+    max-width: 100%;  /* Image won't exceed container width */
+    height: auto;  /* Adjust height proportionally */
   }
   
   /* Resources & Get Involved Styles */
@@ -142,5 +143,31 @@ body {
   
   .contact-list li {
     margin-bottom: 5px;
+  }
+  
+/* Styles for screens wider than 768px (tablets and desktops) */
+@media (min-width: 768px) {
+    .container {
+      max-width: 80%;  /* Adjust container width for larger screens */
+    }
+    .section-title {
+      font-size: 2em;  /* Adjust font size for subheadings on larger screens */
+    }
+    /* Add more styles for larger screens if needed */
+  }
+  
+  /* Styles for screens narrower than 768px (mobile phones) */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90%;  /* Adjust container width for smaller screens */
+    }
+    .msdn-title {
+      font-size: 3em;  /* Adjust font size for title on smaller screens */
+    }
+    .section-title {
+      font-size: 1.5em;  /* Adjust font size for subheadings on smaller screens */
+      padding: 5px 10px;  /* Adjust padding for smaller screens */
+    }
+    /* Add more styles for mobile screens if needed */
   }
   
